@@ -28,7 +28,7 @@ export function CoffeeCard({ coffee }) {
             </p>
           </div>
         </div>
-        {coffee.available && <p>Sold out</p>}
+        {!coffee.available && <p>Sold out</p>}
       </div>
     </div>
   );
