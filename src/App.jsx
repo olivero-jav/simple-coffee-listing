@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { CoffeeCard } from './components/CoffeeCard'
-import { CoffeeList, coffees } from './components/CoffeeList'
+import { CoffeeList } from './components/CoffeeList'
 
 function App() {
   const [count, setCount] = useState(0)
