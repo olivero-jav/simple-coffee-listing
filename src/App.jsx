@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { CoffeeCard } from './components/CoffeeCard'
+import { CoffeeList, coffees } from './components/CoffeeList'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,6 +19,7 @@ function App() {
               <button>Available Now</button>
             </div>
           </div>
+          <CoffeeList />
           <div className='coffeesContainer'>
             <div className='coffeeCard'>
               <div className='coffeeImg'>
@@ -39,140 +40,6 @@ function App() {
                 <p>Sold out</p>
               </div>
             </div>
-            <div className='coffeeCard'>
-              <div className='coffeeImg'>
-                <p className='popularTag'>Popular</p>
-              </div>
-              <div className='mainInfo'>
-                <p>Capuccino</p>
-                <p className='priceTag'>$5.20</p>
-              </div>
-              <div className='extraInfo'>
-                <div className='rating'>
-                  <img src="./Star_fill.svg" alt="" />
-                  <div className='ratingInfo'>
-                    <p className='mainRating'>4.7</p>
-                    <p className='ratingVotes'>(65 votes)</p>
-                  </div>
-                </div>
-                <p>Sold out</p>
-              </div>
-            </div>
-            <div className='coffeeCard'>
-              <div className='coffeeImg'>
-                <p className='popularTag'>Popular</p>
-              </div>
-              <div className='mainInfo'>
-                <p>Capuccino</p>
-                <p className='priceTag'>$5.20</p>
-              </div>
-              <div className='extraInfo'>
-                <div className='rating'>
-                  <img src="./Star_fill.svg" alt="" />
-                  <div className='ratingInfo'>
-                    <p className='mainRating'>4.7</p>
-                    <p className='ratingVotes'>(65 votes)</p>
-                  </div>
-                </div>
-                <p>Sold out</p>
-              </div>
-            </div>
-            <div className='coffeeCard'>
-              <div className='coffeeImg'>
-                <p className='popularTag'>Popular</p>
-              </div>
-              <div className='mainInfo'>
-                <p>Capuccino</p>
-                <p className='priceTag'>$5.20</p>
-              </div>
-              <div className='extraInfo'>
-                <div className='rating'>
-                  <img src="./Star_fill.svg" alt="" />
-                  <div className='ratingInfo'>
-                    <p className='mainRating'>4.7</p>
-                    <p className='ratingVotes'>(65 votes)</p>
-                  </div>
-                </div>
-                <p>Sold out</p>
-              </div>
-            </div>
-            <div className='coffeeCard'>
-              <div className='coffeeImg'>
-                <p className='popularTag'>Popular</p>
-              </div>
-              <div className='mainInfo'>
-                <p>Capuccino</p>
-                <p className='priceTag'>$5.20</p>
-              </div>
-              <div className='extraInfo'>
-                <div className='rating'>
-                  <img src="./Star_fill.svg" alt="" />
-                  <div className='ratingInfo'>
-                    <p className='mainRating'>4.7</p>
-                    <p className='ratingVotes'>(65 votes)</p>
-                  </div>
-                </div>
-                <p>Sold out</p>
-              </div>
-            </div>
-            <div className='coffeeCard'>
-              <div className='coffeeImg'>
-                <p className='popularTag'>Popular</p>
-              </div>
-              <div className='mainInfo'>
-                <p>Capuccino</p>
-                <p className='priceTag'>$5.20</p>
-              </div>
-              <div className='extraInfo'>
-                <div className='rating'>
-                  <img src="./Star_fill.svg" alt="" />
-                  <div className='ratingInfo'>
-                    <p className='mainRating'>4.7</p>
-                    <p className='ratingVotes'>(65 votes)</p>
-                  </div>
-                </div>
-                <p>Sold out</p>
-              </div>
-            </div>
-            <div className='coffeeCard'>
-              <div className='coffeeImg'>
-                <p className='popularTag'>Popular</p>
-              </div>
-              <div className='mainInfo'>
-                <p>Capuccino</p>
-                <p className='priceTag'>$5.20</p>
-              </div>
-              <div className='extraInfo'>
-                <div className='rating'>
-                  <img src="./Star_fill.svg" alt="" />
-                  <div className='ratingInfo'>
-                    <p className='mainRating'>4.7</p>
-                    <p className='ratingVotes'>(65 votes)</p>
-                  </div>
-                </div>
-                <p>Sold out</p>
-              </div>
-            </div>
-            <div className='coffeeCard'>
-              <div className='coffeeImg'>
-                <p className='popularTag'>Popular</p>
-              </div>
-              <div className='mainInfo'>
-                <p>Capuccino</p>
-                <p className='priceTag'>$5.20</p>
-              </div>
-              <div className='extraInfo'>
-                <div className='rating'>
-                  <img src="./Star_fill.svg" alt="" />
-                  <div className='ratingInfo'>
-                    <p className='mainRating'>4.7</p>
-                    <p className='ratingVotes'>(65 votes)</p>
-                  </div>
-                </div>
-                <p>Sold out</p>
-              </div>
-            </div>
-           
           </div>
         </div>
       </div>
