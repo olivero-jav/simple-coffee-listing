@@ -20,7 +20,7 @@ h1, p {
 
 .headerBg {
   background-image: url('/bg-cafe-lg.jpg');
-  height: 330px;
+  height: 310px;
   width: 100%;
   background-position: center;
 }
@@ -30,7 +30,7 @@ h1, p {
   width: 60%;
   padding: 40px 100px;
   margin: auto;
-  margin-top: -190px;
+  margin-top: -170px;
   border-radius: 14px;
 }
 
