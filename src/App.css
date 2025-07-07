@@ -108,7 +108,7 @@ h1, p {
     font-size: 10px;
     font-weight: bold;
     color: #1B1D1F;
-    position: absolute; /* TODO: better this positioning */
+    position: absolute;
     left: 10px;       
     top: 10px;     
     margin: 0;         
@@ -149,6 +149,16 @@ h1, p {
     color: #6F757C;
     font-weight: bold;
   }
+}
+
+.sortingButtons .active {
+  background-color: #6F757C; /* Gris para el botón activo */
+  color: white;
+}
+
+.sortingButtons .inactive {
+  background-color: #000000; /* Negro para el botón inactivo */
+  color: white;
 }
 
 @media (max-width: 1024px) {

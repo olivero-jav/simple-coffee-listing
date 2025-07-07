@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { CoffeeCard } from "./CoffeeCard";
 
-export function CoffeeList() {
+export function CoffeeList({allProducts}) {
   const [coffeeData, setCoffeeData] = useState([]);
 
   useEffect(() => {
@@ -15,11 +15,22 @@ export function CoffeeList() {
       });
   }, []);
 
+  if (!allProducts) {
+    return (
+      <div className="coffeesContainer">
+        {coffeeData
+          .filter((coffee) => coffee.available)
+          .map((coffee) => (
+            <CoffeeCard key={coffee.id} coffee={coffee} />
+          ))}
+      </div>
+    );
+  } else {
   return (
     <div className="coffeesContainer">
       {coffeeData.map((coffee) => (
-        <CoffeeCard key={coffee.id || coffee.name} coffee={coffee} />
+        <CoffeeCard key={coffee.id} coffee={coffee} />
       ))}
     </div>
-  );
+  );}
 }
