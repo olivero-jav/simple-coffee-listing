@@ -19,7 +19,7 @@ h1, p {
 }
 
 .headerBg {
-  background-image: url('./bg-cafe-lg.jpg');
+  background-image: url('/bg-cafe-lg.jpg'); /*img path updated for production*/
   height: 450px;
   width: 100%;
   background-position: center;
